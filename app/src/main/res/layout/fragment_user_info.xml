@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorfragmenyBack">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/appOrDecBTNLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_login_height"
+                android:layout_marginLeft="@dimen/textview_profile_lr_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/textview_profile_lr_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+
+                <EditText
+                    android:id="@+id/editTextUserNameC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/edittext_login_padding_right"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="@dimen/edittext_login_padding"
+                    android:paddingRight="@dimen/edittext_login_padding_right"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_hinttext_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:text="نام کاربری"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textview_profile_txt_size" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:src="@drawable/ic_user_silhouette"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_login_height"
+                android:layout_marginLeft="@dimen/textview_profile_lr_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/textview_profile_lr_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+
+                <EditText
+                    android:id="@+id/editTextFirstNameC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/edittext_login_padding_right"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="@dimen/edittext_login_padding"
+                    android:paddingRight="@dimen/edittext_login_padding_right"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_hinttext_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:text="نام"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textview_profile_txt_size" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:src="@drawable/user_name"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_login_height"
+                android:layout_marginLeft="@dimen/textview_profile_lr_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/textview_profile_lr_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+
+                <EditText
+                    android:id="@+id/editTextLastNameC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/edittext_login_padding_right"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="@dimen/edittext_login_padding"
+                    android:paddingRight="@dimen/edittext_login_padding_right"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_hinttext_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:text="نام خانوادگی"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textview_profile_txt_size" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:src="@drawable/user_name"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_login_height"
+                android:layout_marginLeft="@dimen/textview_profile_lr_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/textview_profile_lr_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+
+                <EditText
+                    android:id="@+id/editTextPhoneNumberC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/edittext_login_padding_right"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="@dimen/edittext_login_padding"
+                    android:paddingRight="@dimen/edittext_login_padding_right"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_hinttext_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:text="تلفن"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textview_profile_txt_size" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:src="@drawable/ic_contact_phone_black_24dp"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/edittext_login_height"-->
+            <!--android:layout_marginLeft="@dimen/textview_profile_lr_margin"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginRight="@dimen/textview_profile_lr_margin"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="40">-->
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/editTextEmailC"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginRight="@dimen/edittext_login_padding_right"-->
+            <!--android:layout_weight="10"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:inputType="text"-->
+            <!--android:padding="@dimen/edittext_login_padding"-->
+            <!--android:paddingRight="@dimen/edittext_login_padding_right"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:textColor="@color/login_text_color"-->
+            <!--android:textColorHint="@color/login_hinttext_color"-->
+            <!--tools:ignore="TextFields" />-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:background="@android:color/darker_gray" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="30"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="40">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="10"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="ایمیل"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+            <!--android:textSize="@dimen/textview_profile_txt_size" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="30"-->
+            <!--android:src="@drawable/ic_email_black_24dp"-->
+            <!--tools:ignore="NestedWeights" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/textview_profile_lr_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/textview_profile_lr_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:weightSum="40">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/edittext_login_padding_right"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="@dimen/edittext_login_padding"
+                    android:paddingRight="@dimen/edittext_login_padding_right"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_hinttext_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical"
+                        android:text="محل سکونت"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textview_profile_txt_size" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="30"
+                        android:src="@drawable/home"
+                        tools:ignore="NestedWeights" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/appOrDecBTNLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/changeProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="5"
+            android:background="@drawable/green_bg"
+            android:text="تایید" />
+
+        <Button
+            android:id="@+id/declineCorrectProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="5"
+
+            android:background="@drawable/red_bg"
+            android:text="انصراف" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

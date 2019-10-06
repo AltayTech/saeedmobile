@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="پروفایل" />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="صفحه اصلی" />
+            <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/ic_favorite_red_24dp"
+                android:title="موارد مورد علاقه" />
+            <item
+                android:id="@+id/nav_shoppingcart"
+                android:icon="@drawable/ic_add_shopping_cart_red_24dp"
+                android:title="سبد خرید" />
+            <item
+                android:id="@+id/nav_orders"
+                android:icon="@drawable/ic_shop_black_24dp"
+                android:title="سفارشات" />
+
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_business_center_black_24dp"
+                android:title="درباره ما" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_phone_black_24dp"
+                android:title=" شبکه های اجتماعی ما" />
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_contact_phone_black_24dp"
+        android:title=" خروج از حساب کاربری" />
+    <item android:title="طراحی شده توسط تبریزاپس"
+
+        />
+</menu>

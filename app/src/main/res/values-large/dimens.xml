@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_margin">10dp</dimen>
+    <dimen name="fav_icon_dims">35dp</dimen>
+    <dimen name="item_inner_margin">5dp</dimen>
+    <dimen name="shoppingcard_head_height">65dp</dimen>
+    <dimen name="shoppingcard_item_height">120dp</dimen>
+    <dimen name="small_button_dims">25dp</dimen>
+    <dimen name="smallbutton_margin">1dp</dimen>
+    <dimen name="icon_margin">10dp</dimen>
+    <dimen name="edittext_login_height">60dp</dimen>
+    <dimen name="button_login_height">55dp</dimen>
+    <dimen name="edittext_login_padding">10dp</dimen>
+    <dimen name="forget_btn_txt_size">15sp</dimen>
+    <dimen name="edittext_login_padding_right">20dp</dimen>
+    <dimen name="header_login_txt_size">25sp</dimen>
+    <dimen name="bottom_btn_login_height">50dp</dimen>
+    <dimen name="textview_profile_lr_margin">20dp</dimen>
+    <dimen name="textview_profile_txt_size">12sp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="favorite_item_margin">1dp</dimen>
+    <dimen name="shoppin_gcart_product_price">22sp</dimen>
+    <dimen name="shoppingcart_product_total_product_number_textsize">13sp</dimen>
+    <dimen name="shoppingcart_removebtn_dimen">25dp</dimen>
+    <dimen name="shoppingcart_middle_text_size">20sp</dimen>
+    <dimen name="shoppingcart_middletext_margindimen">15dp</dimen>
+    <dimen name="shoppingcart_totalprice">19sp</dimen>
+    <dimen name="shoppingcart_header_midtext_topmargin">10dp</dimen>
+    <dimen name="shoppingcart_header_midtext_textsize">12sp</dimen>
+    <dimen name="productview_addshoppingcart_btn_textsize">20sp</dimen>
+    <dimen name="productview_producttitle_textsize">25sp</dimen>
+    <dimen name="productlist_producttitle_textsize">16sp</dimen>
+    <dimen name="productlist_productprice_textsize">15sp</dimen>
+    <dimen name="productlistfav_productprice_textsize">15sp</dimen>
+    <dimen name="productlistfav_producttitle_textsize">15sp</dimen>
+    <dimen name="productlistfav_productinfo_marginleftright">5dp</dimen>
+    <dimen name="productview_productprice_textsize">22sp</dimen>
+    <dimen name="productview_productpricetitle_textsize">12sp</dimen>
+    <dimen name="productlistfav_removebtn_size">30dp</dimen>
+    <dimen name="shopping_cart_icon_dims">35dp</dimen>
+    <dimen name="login_activity_lr_margin">30dp</dimen>
+
+</resources>

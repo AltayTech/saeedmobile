@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorNavIcon">#f2f8f6</color>
+
+    <color name="colorItemBack">#ededed</color>
+    <color name="colorSearchBack">#ffffff</color>
+    <color name="colorShoppingCardHead">#ffffff</color>
+
+    <color name="colorActionBarTitle">#535353</color>
+
+    <color name="colorelementtext2">#1B5E20</color>
+    <color name="colorSmallButtonBack">#dfdfdf</color>
+    <color name="login_text_color">#828282</color>
+    <color name="login_hinttext_color">#265a2d</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">فروشگاه دمو تبریزاپس </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_home">خانه</string>
+
+    <string name="cunsomer_key">ck_70091f0c0e287a8614e76f7edcc4e76c64c80de2</string>
+    <string name="consumersecret">cs_0a0918fa75a56ceed47c78f49907c49c00dad92d</string>
+    <string name="user_information">اطلاعات کاربر</string>
+    <string name="credite">اعتبار</string>
+    <string name="members">تراکنش ها</string>
+    <string name="title_favorite">محصولات مورد علاقه</string>
+    <string name="navigation_profile_icon">پروفایل</string>
+
+</resources>

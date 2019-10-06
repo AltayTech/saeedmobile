@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/shoppingcard_item_height"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shoppingcard_item_height"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layoutDirection="ltr">
+
+
+            <Button
+                android:id="@+id/removeButton"
+                android:layout_width="@dimen/shoppingcart_removebtn_dimen"
+                android:layout_height="@dimen/shoppingcart_removebtn_dimen"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_clear_black_24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <ir.altaytech.saeedmobile.MyImageView
+
+                android:id="@+id/shoppingCartProductImage"
+                android:layout_width="@dimen/shoppingcard_item_height"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/shoppingCartProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/shoppingcart_middletext_margindimen"
+                android:textAlignment="center"
+                android:textColor="#f1481b"
+                android:textSize="@dimen/shoppingcart_middle_text_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/removeButton"
+                app:layout_constraintRight_toLeftOf="@+id/shoppingCartProductImage" />
+
+
+            <TextView
+                android:id="@+id/shoppingCartProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/shoppingcart_middletext_margindimen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#F5A623"
+                android:textSize="@dimen/shoppin_gcart_product_price"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/shoppingcart_middletext_margindimen"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/shoppingCartProductImage"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingCartProductName">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/small_button_dims"
+                        android:layout_height="@dimen/small_button_dims"
+                        android:layout_margin="@dimen/smallbutton_margin"
+                        android:background="@color/colorSmallButtonBack">
+
+                        <Button
+                            android:id="@+id/reduceUnitButton"
+                            android:layout_width="@dimen/shopping_cart_icon_dims"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+android:backgroundTint="#F5A623"
+                            android:background="@drawable/ic_minus_sign" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textViewNumber"
+                        android:layout_width="@dimen/small_button_dims"
+                        android:layout_height="@dimen/small_button_dims"
+                        android:layout_margin="@dimen/smallbutton_margin"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#81bd9f"
+                        android:textSize="@dimen/shoppingcart_product_total_product_number_textsize"
+                        android:textStyle="bold"
+                        tools:targetApi="jelly_bean" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/small_button_dims"
+                        android:layout_height="@dimen/small_button_dims"
+                        android:layout_margin="@dimen/smallbutton_margin"
+                        android:background="@color/colorSmallButtonBack">
+
+                        <Button
+                            android:id="@+id/increaseUnitButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/shopping_cart_icon_dims"
+                            android:backgroundTint="#F5A623"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_plus_sign" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
